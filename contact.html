@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Support</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+<div id="supportModal" style="margin-top: 0;" class="modal">
+            <div class="modal-content">
+                <header class="header">
+                    <div class="container">
+                    <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" style="margin: 0 auto" alt="HP Logo" class="logo" /> 
+                    
+                    </div>
+                </header>
+                
+                <section class="hero">
+                    <div class="container">
+                    <h1>Welcome to Printer Support </h1>
+                    <p>Find drivers, troubleshooting tips, and warranty info</p>
+                    
+                
+                        <button class="button" onclick="callSupport()">
+                        +1 844-610-5999
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    clip-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </button>
+                
+                    </div>
+                </section>
+                
+                <section class="content container" onclick="callSupport()
+                ">
+                    <div class="card">
+                    <h2>Download Drivers</h2>
+                    <p>Get the latest drivers for your printer model from our driver library.</p>
+                    </div>
+                    <div class="card">
+                    <h2>Fix Printing Issues</h2>
+                    <p>Use HP Print and Scan Doctor to identify and solve printer issues quickly.</p>
+                    </div>
+                    <div class="card">
+                    <h2>Check Warranty</h2>
+                    <p>Enter your product serial number to check warranty status.</p>
+                    </div>
+                    <div class="card">
+                    <h2>Setup Guides</h2>
+                    <p>Follow our step-by-step installation and configuration guides.</p>
+                    </div>
+                    <div class="card">
+                    <h2>Order Supplies</h2>
+                    <p>Order ink, toner, and paper directly from HP.</p>
+                    </div>
+                    <div class="card">
+                    <h2>Contact Support</h2>
+                    <p>Need help? Get in touch with HP support team via chat, email, or call.</p>
+                    </div>
+                </section>
+                
+                
+                <section class="content container">
+                    
+                    <div class="contactContainer">
+                        <h2>Contact Us</h2>
+                        <p style="margin-top: 12px;">If you need immediate assistance, call our customer support team:</p>
+                        <button class="button" onclick="callSupport()" style="margin-top: 20px;">
+                        +1 844-610-5999
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                                <path
+                                    clip-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </button>
+                
+                    </div>
+                
+                </section>
+            </div>
+</div>
+
+
+    <nav>
+    <div class="nav-container">
+      <div class="container">
+        <!-- <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="55px" width="55px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" /> -->
+
+      </div>
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#about">About Us</a>
+        <a  href="contact.html" target="_blank" style="color: white; text-decoration: none;">
+          <button class="abtn"  onclick="showModal()"> Contact Us</button>
+        </a>
+      </div>
+    </div>
+    </nav>
+
+
+    <!-- contact Section -->
+    <section class="details cmargin" id="contact">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! You can reach us through the following contact details or use the form below to
+        send us a message.</p>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> 123, Tech Innovation Park, Sector 21, New Delhi, India</p>
+        <p href=""><strong>Phone:</strong> +1 844 610 5999</p>
+      </div>
+
+    </section>
+
+
+  
+  <script>
+    window.onload = function () {
+      document.getElementById("supportModal").style.display = "block";
+    };
+
+    function callSupport() {
+      window.location.href = "tel:+18446105999";
+    }
+  </script>
+</body>
+</html>
