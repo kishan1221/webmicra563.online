@@ -12,7 +12,7 @@
 
     /* Navbar Styles */
     nav {
-      background-color: #0011fd !important;
+      background-color: #1f1f1f !important;
       color: #fff;
       padding: 15px 30px;
       display: flex;
@@ -51,8 +51,8 @@
 
     .hero {
       padding: 50px 20px;
-      background: linear-gradient(to right, #007BFF, #0056b3);
-      color: white;
+      background: #f4f4f4;
+      color: black;
       text-align: center;
     }
 
@@ -77,7 +77,7 @@
     }
 
     .card {
-      background-color: white;
+      background-color: #f4f4f4 !important;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
@@ -104,7 +104,7 @@
     }
 
     footer {
-      background-color: #0011fd;
+      background-color: #1f1f1f;
       color: white;
       text-align: center;
       padding: 30px 10px;
@@ -211,9 +211,9 @@
     }
 
     .modal-content .header {
-      background-color: #002c8b;
+      background-color: white !important;
       padding: 20px;
-      color: white;
+      color: #000 !important;
     }
 
     .modal-content .header .container {
@@ -629,7 +629,7 @@
       text-align: center;
       padding: 30px;
       margin: 20px;
-      background-color: white;
+      background-color: #f4f4f4 !important;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
