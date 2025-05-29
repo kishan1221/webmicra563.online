@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Venmo Customer Service</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00bfff;
+            padding: 20px;
+            color: white;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        section.services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .service {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        footer {
+            background-color: #00bfff;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-container {
+            text-align: center;
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0056b3;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .call-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .call-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .call-button {
+                padding: 8px 16px;
+            }
+        }
+        .logoimg{
+            margin-bottom: 16px;
+            height: 100px;
+            width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div>
+        <img class="logoimg" src="https://i.ibb.co/fzSsFq1b/download-removebg-preview.png" alt="">
+
+        </div>
+        <button onclick="callSupport()">Call Support  +1 877 593 2263</button>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="service">
+                <h2>Account Assistance</h2>
+                <p>Get help with your Ebay account, including login issues, account settings, and security concerns.
+                </p>
+            </div>
+            <div class="service">
+                <h2>Payment Disputes</h2>
+                <p>Resolve payment disputes, unauthorized transactions, and other payment-related issues quickly and
+                    easily.</p>
+            </div>
+            <div class="service">
+                <h2>Refunds & Returns</h2>
+                <p>Assistance with refunds, returns, and buyer protection for purchases made through Ebay.</p>
+            </div>
+            <div class="service">
+                <h2>Prevention</h2>
+                <p>Report suspicious activity, phishing attempts, and other security concerns to protect your Ebay
+                    account.</p>
+            </div>
+            <div class="service">
+                <h2>Technical Help</h2>
+                <p>Help with technical issues, error messages, and troubleshooting for Ebay's website and mobile app.
+                </p>
+            </div>
+            <div class="service">
+                <h2>General Inquiries</h2>
+                <p>Have a question about Ebay? Contact us for answers to general inquiries and assistance.</p>
+            </div>
+
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>If you need immediate assistance, call our customer support team:</p>
+                <a class="call-button" href="tel:+1 877 593 2263">Call Now  +1 877 593 2263</a>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p onclick="callSupport();" >Contact Us</p>
+    </footer>
+
+    <script>
+        function callSupport() {
+            window.open('tel:+1 877 593 2263');
+        }
+    </script>
+</body>
+
+</html>
