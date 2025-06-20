@@ -3,1081 +3,855 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmartPrint 5000 - Printer for Everyone</title>
-  <link rel="stylesheet" href="index.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourest - Explore the World</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
 </head>
 
-<body>
+<body id="top">
 
-  <nav>
-    <div class="nav-container">
-      <div class="container">
-        <!-- <img src="https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg" height="55px" width="55px" class="nav-logo" style="margin: 0 auto" alt="HP Logo" class="logo" /> -->
+  <!-- 
+    - #HEADER
+  -->
 
-      </div>
-      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
-      <div class="nav-links" id="navLinks">
-        <a href="#">Home</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#about">About Us</a>
-        <a  href="contact.html" target="_blank" style="color: white; text-decoration: none;">
-          <button class="abtn"  onclick="showModal()"> Contact Us</button>
-        </a>
-      </div>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Tourest</h1>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Destinations</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="btn btn-secondary">Booking Now</a>
+
+      </nav>
+
     </div>
-  </nav>
-
-  <div class="main">
-    <!-- Header -->
-    <header>
-      <h1 style="padding-top:24px ;">Welcome to Printer Support</h1>
-      <p>Your Ultimate Smart Printing Companion</p>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero">
-      <h2>Printer Starts Here</h2>
-      <p>Blazing speed, crystal clarity, eco-friendly design – all packed in one smart printer made for homes and
-        offices alike.</p>
-    </section>
+  </header>
 
 
-    <!-- Details Section -->
-    <section class="details">
-      <h2 style="margin-bottom: 16px;">Getting to know your Printer by Understanding How it Works </h2>
 
-      <div>
-        <img src="https://blog.inktonerstore.com/wp-content/uploads/2016/02/laptop-1016287_960_720.jpg" height="100%"
-          width="100%" alt="">
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero"
+        style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
+        <div class="container">
+
+          <img src="./assets/images/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+
+          <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+
+          <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Explore Your Travel</p>
+
+            <h2 class="hero-title">Trusted Travel Agency</h2>
+
+            <p class="hero-text">
+              I travel not to go anywhere, but to go. I travel for travel's sake the great affair is to move.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Contact Us</a>
+
+              <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+
+      <section class="section destination">
+        <div class="container">
+
+          <p class="section-subtitle">Destinations</p>
+
+          <h2 class="h2 section-title">Choose Your Place</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-1.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Malé</p>
+
+                  <h3 class="h3 card-title">Maldives</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-2.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Bangkok, Thailand" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Bangkok</p>
+
+                  <h3 class="h3 card-title">Thailand</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-3.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kuala Lumpur, Malaysia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kuala Lumpur</p>
+
+                  <h3 class="h3 card-title">Malaysia</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-4.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kathmandu, Nepal" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Kathmandu</p>
+
+                  <h3 class="h3 card-title">Nepal</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/destination-5.jpg" width="1110" height="480" loading="lazy"
+                    alt="Jakarta, Indonesia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Jakarta</p>
+
+                  <h3 class="h3 card-title">Indonesia</h3>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="section popular">
+        <div class="container">
+
+          <p class="section-subtitle">Featured Tours</p>
+
+          <h2 class="h2 section-title">Most Popular Tours</h2>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+
+            <p class="about-text">
+              Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+              randomised words
+              which don't look even slightly believable.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tour guide</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Friendly price</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Reliable tour</h3>
+
+                  <p class="about-item-text">
+                    Lorem Ipsum available, but the majority have suffered alteration in some.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Booking Now</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">From The Blog Post</p>
+
+          <h2 class="h2 section-title">Latest News & Articles</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy"
+                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="12-04">04 Dec</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Jony bristow">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Jony bristow</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      A good traveler has no fixed plans and is not intent on arriving.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Top destination</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Indonesia, Jakarta</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Maldives, Malé</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Australia, Canberra</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Thailand, Bangkok</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Morocco, Rabat</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Categories</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Travel</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lifestyle</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fashion</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Food & Drink</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Get a newsletter</p>
+
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
       </div>
-      <p>
-        A Printer is an electromechanical device that accepts text and graphical data from a computer and generates the
-        information into a physical form. By knowing what type of printer you have, you will also be able to understand
-        how it works. It is broadly categorized into two (2) the Impact and Non-impact.
-        <br>
-        <br>
-      </p>
-      <p>
-        <b>Impact Printers -</b> are printers in which a key makes contact with an inked ribbon to mark the paper.The
-        following are examples of Impact printers.
-        <br>
-        <br>
-      </p>
-      <p>
-        <b> Daisy wheel –</b> This type of printer works very similar to typewriters. The heart of these printers is a
-        circular mechanism known as daisy wheel since it looks like a daisy and numeric characters, symbols and texts
-        are molded on each petal on the circumference of the circle. With the help of a servo motor, the daisy wheel
-        rotates rapidly and pauses to allow the printing hammer to strike a “petal” containing a character against the
-        ribbon producing a print on the paper. Daisy Wheel Printers speed is slow typically 25-55 characters per second.
-        <br>
-        <br>
-      </p>
-      <p>
-        <b> Dot matrix –</b> Dot matrix printer uses a print head that contains 9 to 24 pins that produces patterns of
-        dots to form individual characters. The pins moves back and forth or up and down motion and prints by impact,
-        striking an inked ribbon. This printer, determined by the number of pins can produce a much better print quality
-        with a speed that can vary from 50 to 500 characters per second. Dot matrix printers can print to multi-page
-        forms that something laser or inkjet printers cannot do.
-        <br>
-        <br>
-      </p>
-      <p>
-        <b> Chain – </b>Like the word chain, a chain printer has a set of numbers and characters arranged in a
-        continuous loop that resembles a chainsaw blade. A circuit inside the printer detects if a correct character
-        appears, then a row of hammers strike the page, pressing the paper against a ribbon. The chain keeps rotating
-        until everything is printed. It is faster than a dot matrix printer which it speeds up to several hundred lines
-        per minute.
-        <br>
-      </p>
-      <p>
-        <b>Non-impact Printers -</b> are printers that do not use a striking device in order to print and they are much
-        quieter than the impact printers. These are some of non-impact printers.
-        <br>
-        <br>
-      </p>
-      <p>
-        <b> Ink-jet – </b> Ink-jet printers produce a high quality graphics and texts. It works the same as dot matrix
-        printers which the characters are formed with little dots, but instead of using inked ribbon, an ink-jet printer
-        sprays ink at a sheet of paper. Depending on the nature of the hard copy, an inkjet printer can produce up to
-        several hundred pages until the ink runs out. Because of its inexpensiveness and satisfactory performance, it is
-        much popular for personal computer users.
-        <br>
-        <br>
-      </p>
 
-      <p>
-        <b>Laser –</b> A laser printer uses the same technology as photocopy machines. It produces a very high quality
-        text and graphics. A laser beam is directed at a mirror which bounces the beam on a light-sensitive drum. This
-        light-sensitive drum has a special coating on it which attracts toner or an ink powder. The toner is then
-        transferred to the paper printing the letters or graphics and a hot roller bonds them together.
-        <br>
-        <br>
-      </p>
-    </section>
+      <div class="footer-bottom">
 
-    <!-- Details Section -->
-    <section class="details">
-      <h2>How Printers Work</h2>
-      <p>
-        Printers are devices that accept text and graphic output from a computer and transfer the information to paper,
-        usually to standard size sheets of paper. Most printers today are either inkjet or laser printers.
+        <a href="#" class="logo">Tourest</a>
 
-        Inkjet printers spray tiny droplets of ink directly onto the paper. They're best for photos and detailed color
-        work. Laser printers use a laser beam to produce an image on a drum, which is then transferred to paper using
-        toner and heat — ideal for high-speed, high-volume printing.
-      </p>
-      <p>
-        The printer also includes auto duplex printing, quiet mode for silent operation, and AI-assisted diagnostics to
-        automatically notify
-        users of maintenance needs. Trusted by over 50,000 businesses worldwide.
-      </p>
-    </section>
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+        </p>
 
+        <ul class="social-list">
 
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-    <!-- About Section -->
-    <section class="details" id="about">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-      <h2>About Us</h2>
-      <p>Welcome to SmartPrint 5000!
-        We are passionate about redefining printing solutions by offering cutting-edge printers that blend speed,
-        precision, and eco-friendly technology.
-        Our mission is to make smart printing accessible to everyone — from home users to businesses.
-        With SmartPrint 5000, you get performance, reliability, and innovation in one package.
-      </p>
-      <br><br>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-      <p>
-        At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-        cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-      </p>
-      <br>
-      <p>
-        Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-        trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-        technology accessible to everyone, regardless of their technical background or business size.
-      </p>
-      <br>
-      <p>
-        With years of research and collaboration with leading technology experts, we have developed a line of printers
-        that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-        capabilities, and low energy consumption.
-      </p>
-      <br>
-      <p>
-        Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-        receives the assistance they need to get the best out of their printing solutions.
-      </p>
-      <br>
-      <p>
-        Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-      </p>
-    </section>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
 
-    <!-- Privacy Section -->
-    <section class="details" id="privacy">
+        </ul>
 
-      <h2>Privacy Policy</h2>
-      <p>At SmartPrint 5000, we respect your privacy.
-        We only collect personal data necessary to provide and improve our services, such as email addresses and usage
-        analytics.
-        We never sell or share your data with third parties without your explicit consent.
-        By using our website or products, you agree to our data collection practices.
-        For more details, please contact our support team.
-      </p>
-      <br>
-      <p>
-        At <strong>SmartPrint 5000</strong>, your privacy is important to us. This Privacy Policy outlines how we
-        collect, use, and protect your personal information when you visit our website or use our services.
-      </p>
-      <br>
-      <p>
-        <strong>Information We Collect:</strong> We may collect personal information such as your name, email address,
-        phone number, and billing information when you make a purchase, contact us, or subscribe to our newsletter.
-        Additionally, we may collect non-personal information like browser type, IP address, and usage patterns through
-        cookies and analytics tools.
-      </p>
-      <br>
-      <p>
-        <strong>How We Use Your Information:</strong> Your information helps us provide and improve our services,
-        process orders, send important updates, marketing communications (with your consent), and ensure website
-        functionality and security.
-      </p>
-      <br>
-      <p>
-        <strong>Data Security:</strong> We implement industry-standard security measures, including encryption and
-        secure servers, to protect your data from unauthorized access, disclosure, or misuse.
-      </p>
-      <br>
-      <p>
-        <strong>Third-Party Services:</strong> We may use trusted third-party services such as payment processors and
-        analytics providers. These services are required to follow strict confidentiality agreements and are used solely
-        to support our operations.
-      </p>
-      <br>
-      <p>
-        <strong>Your Rights:</strong> You have the right to access, update, or request deletion of your personal
-        information. You can also opt-out of receiving promotional emails at any time.
-      </p>
-      <br>
-      <p>
-        <strong>Policy Updates:</strong> We reserve the right to modify this Privacy Policy at any time. Updates will be
-        posted on this page with a revised effective date.
-      </p>
-      <br>
-      <p>
-        For any privacy concerns or inquiries, feel free to <a target="_blank" href="contact.html">contact us</a>.
-      </p>
-      <br>
-    </section>
-
-    <!-- contact Section -->
-    <section class="details" id="contact">
-      <h2>Contact Us</h2>
-      <p>We'd love to hear from you! You can reach us through the following contact details or use the form below to
-        send us a message.</p>
-
-      <div class="contact-info">
-        <p><strong>Address:</strong> 123, Tech Innovation Park, Sector 21, New Delhi, India</p>
-        <p href=""><strong>Phone:</strong> +1 8446102545</p>
       </div>
 
-    </section>
-
-
-    <!-- Features Cards -->
-    <section class="features">
-      <div class="card">
-        <h3>Ultra-Fast Printing</h3>
-        <p>Print up to 35 pages per minute with professional laser-like quality.</p>
-      </div>
-      <div class="card">
-        <h3>Wireless Connectivity</h3>
-        <p>Supports Wi-Fi, Bluetooth, and LAN connections for easy printing from any device.</p>
-      </div>
-      <div class="card">
-        <h3>EcoTank Technology</h3>
-        <p>Save up to 70% ink with refillable tank systems. Good for your pocket and the planet.</p>
-      </div>
-      <div class="card">
-        <h3>Smart Touch Panel</h3>
-        <p>Operate with a sleek 3.5" LCD touchscreen – print, scan, or copy with one tap.</p>
-      </div>
-      <div class="card">
-        <h3>Mobile & Cloud Print</h3>
-        <p>Print directly from your phone with AirPrint, Google Cloud Print, or email-to-print.</p>
-      </div>
-      <div class="card">
-        <h3>OS Compatibility</h3>
-        <p>Works seamlessly on Windows, macOS, Linux & ChromeOS.</p>
-      </div>
-    </section>
-
-
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div
-      style="max-width: 1000px; margin: auto; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-      <div style="margin-bottom: 10px;">
-        <strong>Printer Support</strong> &copy; 2025. All rights reserved.<br>
-        <small>support@printersupport.com | +1 844-610-5999</small>
-      </div>
-      <div style="display: flex; gap: 15px; flex-wrap: wrap;" class="flinks">
-        <a href="#" style="color: white; text-decoration: none;">Home</a>
-        <a href="#about" style="color: white; text-decoration: none;">About Us</a>
-        <a href="#privacy " style="color: white; text-decoration: none">Privacy Policy</a>
-        <a  href="contact.html" target="_blank" style="color: white; text-decoration: none;">
-          <button class="abtn"  onclick="showModal()"> Contact Us</button>
-        </a>
-      </div>
     </div>
   </footer>
 
 
-  <!-- Popup Modal -->
-  <!-- Modal -->
 
 
 
+  <!-- 
+    - #GO TO TOP
+  -->
 
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
 
 
-  <script>
-    const modal = document.getElementById("popupModal");
-    const closeBtn = document.getElementById("closeModal");
 
 
-    function showModal() {
-      document.getElementById("supportModal").style.display = "block";
-    }
 
-    function closeModal() {
-      document.getElementById("supportModal").style.display = "none";
-    }
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-    // Show modal after 3 seconds
-    // window.onload = function () {
-    //   setTimeout(showModal, 1000);
-    // };
-
-    // Close modal if user clicks outside the modal content
-    window.onclick = function (event) {
-      const modal = document.getElementById("supportModal");
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    };
-
-
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("active");
-    }
-
-
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const input = document.querySelector(".search-box");
-      input.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-          alert(`You searched for: ${input.value}`);
-        }
-      });
-    });
-
-    function callSupport() {
-      window.location.href = 'tel:+1 844-610-5999';
-
-    }
-
-    // pages append
-
-    var page = document.querySelector('.main');
-    var navLinks = document.querySelectorAll('.nav-links a')
-   
-    console.log(navLinks);
-    
-    navLinks.forEach(element => {
-        element.onclick = () => {
-         
-              const data = element.getAttribute('href');
-
-                if(data == '#'){
-                  page.innerHTML = `
-                                                            <!-- Header -->
-                                        <header>
-                                          <h1 style="padding-top:24px ;">Welcome to Printer Support</h1>
-                                          <p>Your Ultimate Smart Printing Companion</p>
-                                        </header>
-
-                                        <!-- Hero -->
-                                        <section class="hero">
-                                          <h2>Next-Level Printing Starts Here</h2>
-                                          <p>Blazing speed, crystal clarity, eco-friendly design – all packed in one smart printer made for homes and
-                                            offices alike.</p>
-                                        </section>
-
-
-                                        <!-- Details Section -->
-                                        <section class="details">
-                                          <h2 style="margin-bottom: 16px;">Getting to know your Printer by Understanding How it Works </h2>
-
-                                          <div>
-                                            <img src="https://blog.inktonerstore.com/wp-content/uploads/2016/02/laptop-1016287_960_720.jpg" height="100%"
-                                              width="100%" alt="">
-                                          </div>
-                                          <p>
-                                            A Printer is an electromechanical device that accepts text and graphical data from a computer and generates the
-                                            information into a physical form. By knowing what type of printer you have, you will also be able to understand
-                                            how it works. It is broadly categorized into two (2) the Impact and Non-impact.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b>Impact Printers -</b> are printers in which a key makes contact with an inked ribbon to mark the paper.The
-                                            following are examples of Impact printers.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Daisy wheel –</b> This type of printer works very similar to typewriters. The heart of these printers is a
-                                            circular mechanism known as daisy wheel since it looks like a daisy and numeric characters, symbols and texts
-                                            are molded on each petal on the circumference of the circle. With the help of a servo motor, the daisy wheel
-                                            rotates rapidly and pauses to allow the printing hammer to strike a “petal” containing a character against the
-                                            ribbon producing a print on the paper. Daisy Wheel Printers speed is slow typically 25-55 characters per second.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Dot matrix –</b> Dot matrix printer uses a print head that contains 9 to 24 pins that produces patterns of
-                                            dots to form individual characters. The pins moves back and forth or up and down motion and prints by impact,
-                                            striking an inked ribbon. This printer, determined by the number of pins can produce a much better print quality
-                                            with a speed that can vary from 50 to 500 characters per second. Dot matrix printers can print to multi-page
-                                            forms that something laser or inkjet printers cannot do.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Chain – </b>Like the word chain, a chain printer has a set of numbers and characters arranged in a
-                                            continuous loop that resembles a chainsaw blade. A circuit inside the printer detects if a correct character
-                                            appears, then a row of hammers strike the page, pressing the paper against a ribbon. The chain keeps rotating
-                                            until everything is printed. It is faster than a dot matrix printer which it speeds up to several hundred lines
-                                            per minute.
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b>Non-impact Printers -</b> are printers that do not use a striking device in order to print and they are much
-                                            quieter than the impact printers. These are some of non-impact printers.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Ink-jet – </b> Ink-jet printers produce a high quality graphics and texts. It works the same as dot matrix
-                                            printers which the characters are formed with little dots, but instead of using inked ribbon, an ink-jet printer
-                                            sprays ink at a sheet of paper. Depending on the nature of the hard copy, an inkjet printer can produce up to
-                                            several hundred pages until the ink runs out. Because of its inexpensiveness and satisfactory performance, it is
-                                            much popular for personal computer users.
-                                            <br>
-                                            <br>
-                                          </p>
-
-                                          <p>
-                                            <b>Laser –</b> A laser printer uses the same technology as photocopy machines. It produces a very high quality
-                                            text and graphics. A laser beam is directed at a mirror which bounces the beam on a light-sensitive drum. This
-                                            light-sensitive drum has a special coating on it which attracts toner or an ink powder. The toner is then
-                                            transferred to the paper printing the letters or graphics and a hot roller bonds them together.
-                                            <br>
-                                            <br>
-                                          </p>
-                                        </section>
-
-                                        <!-- Details Section -->
-                                        <section class="details">
-                                          <h2>How Printers Work</h2>
-                                          <p>
-                                            Printers are devices that accept text and graphic output from a computer and transfer the information to paper,
-                                            usually to standard size sheets of paper. Most printers today are either inkjet or laser printers.
-
-                                            Inkjet printers spray tiny droplets of ink directly onto the paper. They're best for photos and detailed color
-                                            work. Laser printers use a laser beam to produce an image on a drum, which is then transferred to paper using
-                                            toner and heat — ideal for high-speed, high-volume printing.
-                                          </p>
-                                          <p>
-                                            The printer also includes auto duplex printing, quiet mode for silent operation, and AI-assisted diagnostics to
-                                            automatically notify
-                                            users of maintenance needs. Trusted by over 50,000 businesses worldwide.
-                                          </p>
-                                        </section>
-
-
-
-                                        <!-- About Section -->
-                                        <section class="details" id="about">
-
-                                          <h2>About Us</h2>
-                                          <p>Welcome to SmartPrint 5000!
-                                            We are passionate about redefining printing solutions by offering cutting-edge printers that blend speed,
-                                            precision, and eco-friendly technology.
-                                            Our mission is to make smart printing accessible to everyone — from home users to businesses.
-                                            With SmartPrint 5000, you get performance, reliability, and innovation in one package.
-                                          </p>
-                                          <br><br>
-
-                                          <p>
-                                            At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-                                            cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-                                            trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-                                            technology accessible to everyone, regardless of their technical background or business size.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            With years of research and collaboration with leading technology experts, we have developed a line of printers
-                                            that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-                                            capabilities, and low energy consumption.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-                                            receives the assistance they need to get the best out of their printing solutions.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-                                          </p>
-                                        </section>
-
-
-                                        <!-- Privacy Section -->
-                                        <section class="details" id="privacy">
-
-                                          <h2>Privacy Policy</h2>
-                                          <p>At SmartPrint 5000, we respect your privacy.
-                                            We only collect personal data necessary to provide and improve our services, such as email addresses and usage
-                                            analytics.
-                                            We never sell or share your data with third parties without your explicit consent.
-                                            By using our website or products, you agree to our data collection practices.
-                                            For more details, please contact our support team.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            At <strong>SmartPrint 5000</strong>, your privacy is important to us. This Privacy Policy outlines how we
-                                            collect, use, and protect your personal information when you visit our website or use our services.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Information We Collect:</strong> We may collect personal information such as your name, email address,
-                                            phone number, and billing information when you make a purchase, contact us, or subscribe to our newsletter.
-                                            Additionally, we may collect non-personal information like browser type, IP address, and usage patterns through
-                                            cookies and analytics tools.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>How We Use Your Information:</strong> Your information helps us provide and improve our services,
-                                            process orders, send important updates, marketing communications (with your consent), and ensure website
-                                            functionality and security.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Data Security:</strong> We implement industry-standard security measures, including encryption and
-                                            secure servers, to protect your data from unauthorized access, disclosure, or misuse.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Third-Party Services:</strong> We may use trusted third-party services such as payment processors and
-                                            analytics providers. These services are required to follow strict confidentiality agreements and are used solely
-                                            to support our operations.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Your Rights:</strong> You have the right to access, update, or request deletion of your personal
-                                            information. You can also opt-out of receiving promotional emails at any time.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Policy Updates:</strong> We reserve the right to modify this Privacy Policy at any time. Updates will be
-                                            posted on this page with a revised effective date.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            For any privacy concerns or inquiries, feel free to <a href="#contact">contact us</a>.
-                                          </p>
-                                          <br>
-                                        </section>
-
-                                        <!-- contact Section -->
-                                        <section class="details" id="contact">
-                                          <h2>Contact Us</h2>
-                                          <p>We'd love to hear from you! You can reach us through the following contact details or use the form below to
-                                            send us a message.</p>
-
-                                          <div class="contact-info">
-                                            <p><strong>Address:</strong> 123, Tech Innovation Park, Sector 21, New Delhi, India</p>
-                                            <p href=""><strong>Phone:</strong> +1 844 610 5999</p>
-                                          </div>
-
-                                        </section>
-
-
-                                        <!-- Features Cards -->
-                                        <section class="features">
-                                          <div class="card">
-                                            <h3>Ultra-Fast Printing</h3>
-                                            <p>Print up to 35 pages per minute with professional laser-like quality.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Wireless Connectivity</h3>
-                                            <p>Supports Wi-Fi, Bluetooth, and LAN connections for easy printing from any device.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>EcoTank Technology</h3>
-                                            <p>Save up to 70% ink with refillable tank systems. Good for your pocket and the planet.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Smart Touch Panel</h3>
-                                            <p>Operate with a sleek 3.5" LCD touchscreen – print, scan, or copy with one tap.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Mobile & Cloud Print</h3>
-                                            <p>Print directly from your phone with AirPrint, Google Cloud Print, or email-to-print.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>OS Compatibility</h3>
-                                            <p>Works seamlessly on Windows, macOS, Linux & ChromeOS.</p>
-                                          </div>
-                                        </section>
-
-
-                  `;
-                }
-
-                if(data == '#about'){
-                    page.innerHTML = `
-                                        <section class="details cmargin"  id="about">
-
-                                              <h2>About Us</h2>
-                                              <p>Welcome to SmartPrint 5000!
-                                                We are passionate about redefining printing solutions by offering cutting-edge printers that blend speed,
-                                                precision, and eco-friendly technology.
-                                                Our mission is to make smart printing accessible to everyone — from home users to businesses.
-                                                With SmartPrint 5000, you get performance, reliability, and innovation in one package.
-                                              </p>
-                                              <br><br>
-
-                                              <p>
-                                                At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-                                                cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-                                                trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-                                                technology accessible to everyone, regardless of their technical background or business size.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                With years of research and collaboration with leading technology experts, we have developed a line of printers
-                                                that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-                                                capabilities, and low energy consumption.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-                                                receives the assistance they need to get the best out of their printing solutions.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-                                              </p>
-                                            </section>
-
-                    
-                    `;
-                }
-                
-                if(data == '#privacy'){
-                      page.innerHTML = `
-                                          <!-- Privacy Section -->
-                                          <section class="details pmargin" id="privacy">
-
-                                            <h2>Privacy Policy</h2>
-                                            <p>At SmartPrint 5000, we respect your privacy.
-                                              We only collect personal data necessary to provide and improve our services, such as email addresses and usage
-                                              analytics.
-                                              We never sell or share your data with third parties without your explicit consent.
-                                              By using our website or products, you agree to our data collection practices.
-                                              For more details, please contact our support team.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              At <strong>SmartPrint 5000</strong>, your privacy is important to us. This Privacy Policy outlines how we
-                                              collect, use, and protect your personal information when you visit our website or use our services.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>Information We Collect:</strong> We may collect personal information such as your name, email address,
-                                              phone number, and billing information when you make a purchase, contact us, or subscribe to our newsletter.
-                                              Additionally, we may collect non-personal information like browser type, IP address, and usage patterns through
-                                              cookies and analytics tools.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>How We Use Your Information:</strong> Your information helps us provide and improve our services,
-                                              process orders, send important updates, marketing communications (with your consent), and ensure website
-                                              functionality and security.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>Data Security:</strong> We implement industry-standard security measures, including encryption and
-                                              secure servers, to protect your data from unauthorized access, disclosure, or misuse.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>Third-Party Services:</strong> We may use trusted third-party services such as payment processors and
-                                              analytics providers. These services are required to follow strict confidentiality agreements and are used solely
-                                              to support our operations.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>Your Rights:</strong> You have the right to access, update, or request deletion of your personal
-                                              information. You can also opt-out of receiving promotional emails at any time.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              <strong>Policy Updates:</strong> We reserve the right to modify this Privacy Policy at any time. Updates will be
-                                              posted on this page with a revised effective date.
-                                            </p>
-                                            <br>
-                                            <p>
-                                              For any privacy concerns or inquiries, feel free to <a href="#contact">contact us</a>.
-                                            </p>
-                                            <br>
-                                          </section>
-
-                                          <!-- contact Section -->
-                                          <section class="details" id="contact">
-                                            <h2>Contact Us</h2>
-                                            <p>We'd love to hear from you! You can reach us through the following contact details or use the form below to
-                                              send us a message.</p>
-
-                                            <div class="contact-info">
-                                              <p><strong>Address:</strong> 123, Tech Innovation Park, Sector 21, New Delhi, India</p>
-                                              <p href=""><strong>Phone:</strong> +1 844 610 5999</p>
-                                            </div>
-
-                                          </section>
-                      
-                      `;
-                }
-        }
-    });
-
-    var footerLinks = document.querySelectorAll('.flinks a')
-
-    
-     footerLinks.forEach(element => {
-        element.onclick = () => {
-         const data = element.getAttribute('href');
-     
-                if(data == '#'){
-                  page.innerHTML = `
-                                                            <!-- Header -->
-                                        <header>
-                                          <h1 style="padding-top:24px ;">Welcome to Printer Support</h1>
-                                          <p>Your Ultimate Smart Printing Companion</p>
-                                        </header>
-
-                                        <!-- Hero -->
-                                        <section class="hero">
-                                          <h2>Next-Level Printing Starts Here</h2>
-                                          <p>Blazing speed, crystal clarity, eco-friendly design – all packed in one smart printer made for homes and
-                                            offices alike.</p>
-                                        </section>
-
-
-                                        <!-- Details Section -->
-                                        <section class="details">
-                                          <h2 style="margin-bottom: 16px;">Getting to know your Printer by Understanding How it Works </h2>
-
-                                          <div>
-                                            <img src="https://blog.inktonerstore.com/wp-content/uploads/2016/02/laptop-1016287_960_720.jpg" height="100%"
-                                              width="100%" alt="">
-                                          </div>
-                                          <p>
-                                            A Printer is an electromechanical device that accepts text and graphical data from a computer and generates the
-                                            information into a physical form. By knowing what type of printer you have, you will also be able to understand
-                                            how it works. It is broadly categorized into two (2) the Impact and Non-impact.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b>Impact Printers -</b> are printers in which a key makes contact with an inked ribbon to mark the paper.The
-                                            following are examples of Impact printers.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Daisy wheel –</b> This type of printer works very similar to typewriters. The heart of these printers is a
-                                            circular mechanism known as daisy wheel since it looks like a daisy and numeric characters, symbols and texts
-                                            are molded on each petal on the circumference of the circle. With the help of a servo motor, the daisy wheel
-                                            rotates rapidly and pauses to allow the printing hammer to strike a “petal” containing a character against the
-                                            ribbon producing a print on the paper. Daisy Wheel Printers speed is slow typically 25-55 characters per second.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Dot matrix –</b> Dot matrix printer uses a print head that contains 9 to 24 pins that produces patterns of
-                                            dots to form individual characters. The pins moves back and forth or up and down motion and prints by impact,
-                                            striking an inked ribbon. This printer, determined by the number of pins can produce a much better print quality
-                                            with a speed that can vary from 50 to 500 characters per second. Dot matrix printers can print to multi-page
-                                            forms that something laser or inkjet printers cannot do.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Chain – </b>Like the word chain, a chain printer has a set of numbers and characters arranged in a
-                                            continuous loop that resembles a chainsaw blade. A circuit inside the printer detects if a correct character
-                                            appears, then a row of hammers strike the page, pressing the paper against a ribbon. The chain keeps rotating
-                                            until everything is printed. It is faster than a dot matrix printer which it speeds up to several hundred lines
-                                            per minute.
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b>Non-impact Printers -</b> are printers that do not use a striking device in order to print and they are much
-                                            quieter than the impact printers. These are some of non-impact printers.
-                                            <br>
-                                            <br>
-                                          </p>
-                                          <p>
-                                            <b> Ink-jet – </b> Ink-jet printers produce a high quality graphics and texts. It works the same as dot matrix
-                                            printers which the characters are formed with little dots, but instead of using inked ribbon, an ink-jet printer
-                                            sprays ink at a sheet of paper. Depending on the nature of the hard copy, an inkjet printer can produce up to
-                                            several hundred pages until the ink runs out. Because of its inexpensiveness and satisfactory performance, it is
-                                            much popular for personal computer users.
-                                            <br>
-                                            <br>
-                                          </p>
-
-                                          <p>
-                                            <b>Laser –</b> A laser printer uses the same technology as photocopy machines. It produces a very high quality
-                                            text and graphics. A laser beam is directed at a mirror which bounces the beam on a light-sensitive drum. This
-                                            light-sensitive drum has a special coating on it which attracts toner or an ink powder. The toner is then
-                                            transferred to the paper printing the letters or graphics and a hot roller bonds them together.
-                                            <br>
-                                            <br>
-                                          </p>
-                                        </section>
-
-                                        <!-- Details Section -->
-                                        <section class="details">
-                                          <h2>How Printers Work</h2>
-                                          <p>
-                                            Printers are devices that accept text and graphic output from a computer and transfer the information to paper,
-                                            usually to standard size sheets of paper. Most printers today are either inkjet or laser printers.
-
-                                            Inkjet printers spray tiny droplets of ink directly onto the paper. They're best for photos and detailed color
-                                            work. Laser printers use a laser beam to produce an image on a drum, which is then transferred to paper using
-                                            toner and heat — ideal for high-speed, high-volume printing.
-                                          </p>
-                                          <p>
-                                            The printer also includes auto duplex printing, quiet mode for silent operation, and AI-assisted diagnostics to
-                                            automatically notify
-                                            users of maintenance needs. Trusted by over 50,000 businesses worldwide.
-                                          </p>
-                                        </section>
-
-
-
-                                        <!-- About Section -->
-                                        <section class="details" id="about">
-
-                                          <h2>About Us</h2>
-                                          <p>Welcome to SmartPrint 5000!
-                                            We are passionate about redefining printing solutions by offering cutting-edge printers that blend speed,
-                                            precision, and eco-friendly technology.
-                                            Our mission is to make smart printing accessible to everyone — from home users to businesses.
-                                            With SmartPrint 5000, you get performance, reliability, and innovation in one package.
-                                          </p>
-                                          <br><br>
-
-                                          <p>
-                                            At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-                                            cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-                                            trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-                                            technology accessible to everyone, regardless of their technical background or business size.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            With years of research and collaboration with leading technology experts, we have developed a line of printers
-                                            that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-                                            capabilities, and low energy consumption.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-                                            receives the assistance they need to get the best out of their printing solutions.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-                                          </p>
-                                        </section>
-
-
-                                        <!-- Privacy Section -->
-                                        <section class="details" id="privacy">
-
-                                          <h2>Privacy Policy</h2>
-                                          <p>At SmartPrint 5000, we respect your privacy.
-                                            We only collect personal data necessary to provide and improve our services, such as email addresses and usage
-                                            analytics.
-                                            We never sell or share your data with third parties without your explicit consent.
-                                            By using our website or products, you agree to our data collection practices.
-                                            For more details, please contact our support team.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            At <strong>SmartPrint 5000</strong>, your privacy is important to us. This Privacy Policy outlines how we
-                                            collect, use, and protect your personal information when you visit our website or use our services.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Information We Collect:</strong> We may collect personal information such as your name, email address,
-                                            phone number, and billing information when you make a purchase, contact us, or subscribe to our newsletter.
-                                            Additionally, we may collect non-personal information like browser type, IP address, and usage patterns through
-                                            cookies and analytics tools.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>How We Use Your Information:</strong> Your information helps us provide and improve our services,
-                                            process orders, send important updates, marketing communications (with your consent), and ensure website
-                                            functionality and security.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Data Security:</strong> We implement industry-standard security measures, including encryption and
-                                            secure servers, to protect your data from unauthorized access, disclosure, or misuse.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Third-Party Services:</strong> We may use trusted third-party services such as payment processors and
-                                            analytics providers. These services are required to follow strict confidentiality agreements and are used solely
-                                            to support our operations.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Your Rights:</strong> You have the right to access, update, or request deletion of your personal
-                                            information. You can also opt-out of receiving promotional emails at any time.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            <strong>Policy Updates:</strong> We reserve the right to modify this Privacy Policy at any time. Updates will be
-                                            posted on this page with a revised effective date.
-                                          </p>
-                                          <br>
-                                          <p>
-                                            For any privacy concerns or inquiries, feel free to <a href="#contact">contact us</a>.
-                                          </p>
-                                          <br>
-                                        </section>
-
-                                        <!-- contact Section -->
-                                        <section class="details" id="contact">
-                                          <h2>Contact Us</h2>
-                                          <p>We'd love to hear from you! You can reach us through the following contact details or use the form below to
-                                            send us a message.</p>
-
-                                          <div class="contact-info">
-                                            <p><strong>Address:</strong> 123, Tech Innovation Park, Sector 21, New Delhi, India</p>
-                                            <p href=""><strong>Phone:</strong> +1 844 610 5999</p>
-                                          </div>
-
-                                        </section>
-
-
-                                        <!-- Features Cards -->
-                                        <section class="features">
-                                          <div class="card">
-                                            <h3>Ultra-Fast Printing</h3>
-                                            <p>Print up to 35 pages per minute with professional laser-like quality.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Wireless Connectivity</h3>
-                                            <p>Supports Wi-Fi, Bluetooth, and LAN connections for easy printing from any device.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>EcoTank Technology</h3>
-                                            <p>Save up to 70% ink with refillable tank systems. Good for your pocket and the planet.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Smart Touch Panel</h3>
-                                            <p>Operate with a sleek 3.5" LCD touchscreen – print, scan, or copy with one tap.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>Mobile & Cloud Print</h3>
-                                            <p>Print directly from your phone with AirPrint, Google Cloud Print, or email-to-print.</p>
-                                          </div>
-                                          <div class="card">
-                                            <h3>OS Compatibility</h3>
-                                            <p>Works seamlessly on Windows, macOS, Linux & ChromeOS.</p>
-                                          </div>
-                                        </section>
-
-
-                  `;
-                }
-
-                if(data == '#about'){
-                    page.innerHTML = `
-                                        <section class="details cmargin"  id="about">
-
-                                              <h2>About Us</h2>
-                                              <p>Welcome to SmartPrint 5000!
-                                                We are passionate about redefining printing solutions by offering cutting-edge printers that blend speed,
-                                                precision, and eco-friendly technology.
-                                                Our mission is to make smart printing accessible to everyone — from home users to businesses.
-                                                With SmartPrint 5000, you get performance, reliability, and innovation in one package.
-                                              </p>
-                                              <br><br>
-
-                                              <p>
-                                                At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-                                                cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-                                                trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-                                                technology accessible to everyone, regardless of their technical background or business size.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                With years of research and collaboration with leading technology experts, we have developed a line of printers
-                                                that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-                                                capabilities, and low energy consumption.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-                                                receives the assistance they need to get the best out of their printing solutions.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-                                              </p>
-                                            </section>
-
-                    
-                    `;
-                }
-                
-                if(data == '#privacy'){
-                  page.innerHTML = `
-                  
-                  
-                          <p>
-                                                At <strong>SmartPrint 5000</strong>, we are dedicated to revolutionizing the printing experience by offering
-                                                cutting-edge, user-friendly, and eco-conscious printing solutions for individuals, homes, and businesses.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Established with a passion for innovation and customer satisfaction, SmartPrint 5000 has quickly grown into a
-                                                trusted name in the printing industry. Our journey began with a simple mission: to make advanced printing
-                                                technology accessible to everyone, regardless of their technical background or business size.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                With years of research and collaboration with leading technology experts, we have developed a line of printers
-                                                that combine speed, quality, and sustainability. Our products are known for their intuitive interfaces, wireless
-                                                capabilities, and low energy consumption.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Beyond our products, we pride ourselves on our exceptional customer support, ensuring that every customer
-                                                receives the assistance they need to get the best out of their printing solutions.
-                                              </p>
-                                              <br>
-                                              <p>
-                                                Join our community of satisfied customers and experience the future of smart printing with SmartPrint 5000.
-                                              </p>
-                  
-                  `;
-                }
-        }
-    });
-  </script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
