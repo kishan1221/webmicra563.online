@@ -26,6 +26,98 @@
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
+
+
+
+  <style>
+    /* From Uiverse.io by zanina-yassine */
+    .popup {
+      position: relative;
+      width: 320px;
+      height: fit-content;
+      background: #FFFFFF;
+      box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 13px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: #ECF1FD;
+      box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+      border-radius: 5px;
+    }
+
+    .note {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+      color: #2B2B2F;
+    }
+
+    .subtitle {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: #5F5D6B;
+    }
+
+    .input_field {
+      width: 100%;
+      height: 42px;
+      padding: 0 0 0 12px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #e5e5e5;
+      filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+      transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    }
+
+    .input_field:focus {
+      border: 1px solid transparent;
+      box-shadow: 0px 0px 0px 1px #2B2B2F;
+      background-color: transparent;
+    }
+
+    .form button.submit {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 18px;
+      gap: 10px;
+      width: 100%;
+      height: 42px;
+      background: teal;
+      box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+      border-radius: 5px;
+      border: 0;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -55,23 +147,23 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About Us</a>
+            <a href="#about" class="navbar-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Tours</a>
+            <a href="#tours" class="navbar-link">Tours</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Destinations</a>
+            <a href="#destinations" class="navbar-link">Destinations</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="#blog" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="contact.html" class="navbar-link">Contact Us</a>
+            <a href="#contact" class="navbar-link">Contact Us</a>
           </li>
 
         </ul>
@@ -102,7 +194,7 @@
 
           <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
 
-          <img src="./assets/images/shape-2.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+          <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
 
           <div class="hero-content">
 
@@ -115,9 +207,9 @@
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Contact Us</a>
+              <a href="#contact" class="btn btn-primary">Contact Us</a>
 
-              <a href="#" class="btn btn-outline">Learn More</a>
+              <a href="#blog" class="btn btn-outline">Learn More</a>
             </div>
 
           </div>
@@ -138,7 +230,7 @@
         - #DESTINATION
       -->
 
-      <section class="section destination">
+      <section id="destinations" class="section destination">
         <div class="container">
 
           <p class="section-subtitle">Destinations</p>
@@ -245,7 +337,7 @@
         - #POPULAR
       -->
 
-      <section class="section popular">
+      <section id="tours" class="section popular">
         <div class="container">
 
           <p class="section-subtitle">Featured Tours</p>
@@ -396,7 +488,7 @@
         - #ABOUT
       -->
 
-      <section class="section about">
+      <section id="about" class="section about">
         <div class="container">
 
           <div class="about-content">
@@ -476,13 +568,110 @@
 
 
 
+      <!-- 
+        - #Contact
+      -->
+
+      <section id="contact" class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <!-- From Uiverse.io by zanina-yassine -->
+            <div class="popup">
+              <form class="form" id="subscribeForm">
+
+                <div class="about-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+
+                <div class="note">
+                  <label class="title">Contact With Us</label>
+                  <span class="subtitle">
+                  We value your message. Our team will connect with you within 24 hours.
+                  </span>
+                </div>
+
+                <input placeholder="Enter your Name" title="Enter your name" name="name" type="text" class="input_field"
+                  required>
+                <input placeholder="Enter your E-mail" title="Enter your e-mail" name="email" type="email"
+                  class="input_field" required>
+                <input placeholder="Enter your Mobile No" title="Enter your number" name="mobile" type="tel"
+                  class="input_field" required>
+
+                <button class="submit" type="submit">Submit</button>
+
+                <!-- Success message container -->
+                <p id="successMessage" style="display:none; color:green; margin-top:10px;">✅ Thank you! Your message has been received. We’ll get back to you soon.</p>
+              </form>
+
+            </div>
+
+
+
+          </div>
+
+          <figure class="about-banner">
+            <div class="about-content">
+
+              <p class="section-subtitle">Contact Us</p>
+
+              <h2 class="h2 section-title">Explore all tour of the world Contact with us.</h2>
+
+
+              <ul class="about-list">
+
+                <li class="about-item">
+
+                  <div class="about-item-icon">
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
+
+                  <div class="about-item-content">
+                    <h3 class="h3 about-item-title">Address</h3>
+
+                    <p class="about-item-text">
+                      Sector 1 , Noida , Uttar Pradesh , India.
+                    </p>
+                  </div>
+
+                </li>
+
+                <li class="about-item">
+
+                  <div class="about-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+
+                  <div class="about-item-content">
+                    <h3 class="h3 about-item-title">Mobile No</h3>
+
+                    <p class="about-item-text">
+                      +1-844-610-2545
+                    </p>
+                  </div>
+
+                </li>
+
+              </ul>
+
+              <a href="#" class="btn btn-primary">Booking Now</a>
+
+            </div>
+          </figure>
+
+        </div>
+      </section>
+
+
 
 
       <!-- 
         - #BLOG
       -->
 
-      <section class="section blog">
+      <section id="blog" class="section blog">
         <div class="container">
 
           <p class="section-subtitle">From The Blog Post</p>
@@ -677,6 +866,7 @@
 
       <div class="footer-top">
 
+
         <ul class="footer-list">
 
           <li>
@@ -684,26 +874,38 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Indonesia, Jakarta</a>
+            <a href="https://www.google.com/maps/place/Jakarta,+Indonesia" target="_blank" class="footer-link">
+              Indonesia, Jakarta
+            </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Maldives, Malé</a>
+            <a href="https://www.google.com/maps/place/Malé,+Maldives" target="_blank" class="footer-link">
+              Maldives, Malé
+            </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Australia, Canberra</a>
+            <a href="https://www.google.com/maps/place/Canberra,+Australia" target="_blank" class="footer-link">
+              Australia, Canberra
+            </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Thailand, Bangkok</a>
+            <a href="https://www.google.com/maps/place/Bangkok,+Thailand" target="_blank" class="footer-link">
+              Thailand, Bangkok
+            </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Morocco, Rabat</a>
+            <a href="https://www.google.com/maps/place/Rabat,+Morocco" target="_blank" class="footer-link">
+              Morocco, Rabat
+            </a>
           </li>
 
         </ul>
+
+
 
         <ul class="footer-list">
 
@@ -740,15 +942,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="#about" class="footer-link">About</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact</a>
+            <a href="#contact" class="footer-link">Contact</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Tours</a>
+            <a href="#tours" class="footer-link">Tours</a>
           </li>
 
           <li>
@@ -784,37 +986,37 @@
         <a href="#" class="logo">Tourest</a>
 
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">Turest</a>. All Rights Reserved
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
         </p>
 
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.x.com/" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.google.com/" class="social-link">
               <ion-icon name="logo-google"></ion-icon>
             </a>
           </li>
@@ -854,5 +1056,31 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+<script>
+  const form = document.getElementById('subscribeForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Optional: Validate fields (already using `required`)
+    // Clear previous message
+    successMessage.style.display = "none";
+
+    // Simulate form submission (e.g., send to API here if needed)
+
+    // Show success message
+    successMessage.style.display = "block";
+
+    // Optionally reset the form
+    form.reset();
+
+    // Hide message after few seconds
+    setTimeout(() => {
+      successMessage.style.display = "none";
+    }, 4000);
+  });
+</script>
+
 
 </html>
